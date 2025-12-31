@@ -20,19 +20,19 @@ const products = [
     },
     {
         id: 2,
-        name: "Dragon's Hoard Amber",
-        description: "Golden amber with captured gold leaf flakes and fiery orange accents.",
-        fullDescription: "Inspired by a dragon's treasure trove, this set captures the warmth of gold and the fire of precious gems. Golden amber resin holds delicate gold leaf flakes that catch the light with every roll. The numbers are inked in a deep crimson for excellent contrast. Each die has a substantial weight and satisfying roll, with no bubbles or imperfections.",
-        price: 74.50,
-        etsyLink: "https://www.etsy.com/listing/YOUR-ACTUAL-LINK-HERE",
-        imageUrl: "images/products/dragons-hoard.jpg", // UPDATE with your actual filename
-        badge: "New",
+        name: "Mighty Cthulhu, 55mm D20",
+        description: "D20 with Cthulhu figure",
+        fullDescription: "Unleash the ancient power of Cthulhu with this one-of-a-kind d20. Measuring a massive 55mm from tip to tip, this die is sure to make a statement at the gaming table. The clear plastic epoxy material allows for a clear view of the intricate Cthulhu figure inside, adding a touch of eldritch horror to every roll. Whether you're a fan of Lovecraftian lore or just want a unique dice to add to your collection, this d20 is a must-have for any Dungeons and Dragons enthusiast.  This company is officially licensed to sell physical prints of Artisan Guild models, obtained through the Artisan Guild Patreon, Tribes or MyMiniFactory store. The original digital STL files of this model can be purchased by joining the Artisan Guild Patreon (https://www.patreon.com/ArtisanGuild), Tribes (https://www.myminifactory.com/es/users/Artisan_Guild?show=tribe) or MyMiniFactory store (https://www.myminifactory.com/es/users/Artisan_Guild).  link to model: https://www.myminifactory.com/object/3d-print-avatar-of-holmuran-185808",
+        price: 150,
+        etsyLink: "https://darkstardice.etsy.com/listing/1232271088",
+        imageUrl: "Images/Cthulhu/PXL_20240327_065355445.jpg", // UPDATE with your actual filename
+        badge: "Hot",
         includes: [
-            "Full 7-dice polyhedral set",
-            "Extra d20 for advantage/disadvantage",
+            "Hand painted figurine inside d20",
+            "Custom stand to hold the d20",
             "Velvet drawstring pouch",
-            "Gold leaf inclusions",
-            "Premium resin construction"
+            "Handcrafted with premium resin",
+            "Perfectly balanced for fair rolls"
         ]
     },
     {
@@ -334,3 +334,4 @@ modalStyles.textContent = `
 `;
 
 document.head.appendChild(modalStyles);
+
