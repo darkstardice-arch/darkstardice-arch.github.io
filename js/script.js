@@ -45,8 +45,8 @@ const products = [
         imageUrl: "images/products/enchanted-forest.jpg", // UPDATE with your actual filename
         badge: null,
         includes: [
-            "Full 7-dice polyhedral set",
-            "Extra d20 for advantage/disadvantage",
+            "Hand painted figurine inside d20",
+            "Custom stand to hold the d20",
             "Velvet drawstring pouch",
             "Mossy green inclusions",
             "Perfectly balanced"
@@ -62,8 +62,8 @@ const products = [
         imageUrl: "images/products/midnight-shadow.jpg", // UPDATE with your actual filename
         badge: "Limited",
         includes: [
-            "Full 7-dice polyhedral set",
-            "Extra d20 for advantage/disadvantage",
+            "Hand painted figurine inside d20",
+            "Custom stand to hold the d20",
             "Velvet drawstring pouch",
             "Hidden color-shift effect",
             "Metallic silver numbers"
@@ -79,8 +79,8 @@ const products = [
         imageUrl: "images/products/arctic-frost.jpg", // UPDATE with your actual filename
         badge: null,
         includes: [
-            "Full 7-dice polyhedral set",
-            "Extra d20 for advantage/disadvantage",
+            "Hand painted figurine inside d20",
+            "Custom stand to hold the d20",
             "Velvet drawstring pouch",
             "Icy blue and white swirls",
             "Silver glitter accents"
@@ -96,8 +96,8 @@ const products = [
         imageUrl: "images/products/volcanic-ember.jpg", // UPDATE with your actual filename
         badge: "Popular",
         includes: [
-            "Full 7-dice polyhedral set",
-            "Extra d20 for advantage/disadvantage",
+            "Hand painted figurine inside d20",
+            "Custom stand to hold the d20",
             "Velvet drawstring pouch",
             "Lava flow effect",
             "Bold black numbers"
@@ -334,4 +334,5 @@ modalStyles.textContent = `
 `;
 
 document.head.appendChild(modalStyles);
+
 
