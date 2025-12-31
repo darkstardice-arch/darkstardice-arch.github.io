@@ -4,7 +4,7 @@ const products = [
     {
         id: 1,
         name: "Wish Dragon, 75mm D20",
-        description: "wish dragon d20",
+        description: "75mm D20 with hand painded figurine inside.",
         fullDescription: "Tbd",
         price: 400,
         etsyLink: "https://darkstardice.etsy.com/listing/4311943951",
@@ -21,7 +21,7 @@ const products = [
     {
         id: 2,
         name: "Mighty Cthulhu, 55mm D20",
-        description: "D20 with Cthulhu figure",
+        description: "55mm D20 with hand painded figurine inside.",
         fullDescription: "Unleash the ancient power of Cthulhu with this one-of-a-kind d20. Measuring a massive 55mm from tip to tip, this die is sure to make a statement at the gaming table. The clear plastic epoxy material allows for a clear view of the intricate Cthulhu figure inside, adding a touch of eldritch horror to every roll. Whether you're a fan of Lovecraftian lore or just want a unique dice to add to your collection, this d20 is a must-have for any Dungeons and Dragons enthusiast.  This company is officially licensed to sell physical prints of Artisan Guild models, obtained through the Artisan Guild Patreon, Tribes or MyMiniFactory store. The original digital STL files of this model can be purchased by joining the Artisan Guild Patreon (https://www.patreon.com/ArtisanGuild), Tribes (https://www.myminifactory.com/es/users/Artisan_Guild?show=tribe) or MyMiniFactory store (https://www.myminifactory.com/es/users/Artisan_Guild).  link to model: https://www.myminifactory.com/object/3d-print-avatar-of-holmuran-185808",
         price: 150,
         etsyLink: "https://darkstardice.etsy.com/listing/1232271088",
@@ -37,25 +37,25 @@ const products = [
     },
     {
         id: 3,
-        name: "Enchanted Forest",
-        description: "Emerald greens with mossy inclusions and sparkling glitter.",
-        fullDescription: "Step into a magical forest with this enchanting dice set. Layers of emerald and jade green resin create depth, while subtle mossy inclusions and fine green glitter mimic dappled sunlight through leaves. The silver numbers shine brightly against the deep green background. These dice are perfectly balanced and tumbled smooth for a professional finish.",
-        price: 65.75,
-        etsyLink: "https://www.etsy.com/listing/YOUR-ACTUAL-LINK-HERE",
-        imageUrl: "images/products/enchanted-forest.jpg", // UPDATE with your actual filename
+        name: "Treasure Mimic",
+        description: "55mm D20 with hand painded figurine inside.",
+        fullDescription: "This custom-made 55mm d20 die is a unique and high-quality accessory for any role-playing game. The die features a 3D printed and hand-painted design of a treasure chest on one side that transforms into a mimic on the other side of the 20. The mimic and treasure chest sit on a bed of gold coins, adding an extra layer of detail and realism. The die is expertly crafted with high-quality materials to ensure it rolls smoothly and accurately, making it a durable and reliable addition to your gaming collection.  This company is officially licensed to sell physical prints of Artisan Guild models, obtained through the Artisan Guild Patreon, Tribes or MyMiniFactory store. The original digital STL files of this model can be purchased by joining the Artisan Guild Patreon (https://www.patreon.com/ArtisanGuild), Tribes (https://www.myminifactory.com/es/users/Artisan_Guild?show=tribe) or MyMiniFactory store (https://www.myminifactory.com/es/users/Artisan_Guild).  Link to models: https://www.myminifactory.com/object/3d-print-treasure-chests-mimics-arcanist-s-guild-252849",
+        price: 150,
+        etsyLink: "https://darkstardice.etsy.com/listing/1392307677",
+        imageUrl: "Images/Treasure Mimic/PXL_20230112_222820640.jpg", // UPDATE with your actual filename
         badge: null,
         includes: [
             "Hand painted figurine inside d20",
             "Custom stand to hold the d20",
             "Velvet drawstring pouch",
-            "Mossy green inclusions",
-            "Perfectly balanced"
+            "Handcrafted with premium resin",
+            "Perfectly balanced for fair rolls"
         ]
     },
     {
         id: 4,
-        name: "Midnight Shadow",
-        description: "Deep black with purple and blue shimmer that appears in the light.",
+        name: "Labyrith",
+        description: "55mm D20 with hand painded figurine inside.",
         fullDescription: "Mysterious and elegant, the Midnight Shadow set appears black at first glance but reveals hidden depths of purple and blue shimmer when held to the light. This effect is achieved through specialized pigment techniques. The numbers are inked in a bright metallic silver for maximum readability in dim gaming environments.",
         price: 72.25,
         etsyLink: "https://www.etsy.com/listing/YOUR-ACTUAL-LINK-HERE",
@@ -65,14 +65,14 @@ const products = [
             "Hand painted figurine inside d20",
             "Custom stand to hold the d20",
             "Velvet drawstring pouch",
-            "Hidden color-shift effect",
-            "Metallic silver numbers"
+            "Handcrafted with premium resin",
+            "Perfectly balanced for fair rolls"
         ]
     },
     {
         id: 5,
-        name: "Arctic Frost",
-        description: "Icy clear blue with white swirls and silver glitter.",
+        name: "Exodia",
+        description: "55mm D20 with hand painded figurine inside.",
         fullDescription: "Feel the chill of the frozen north with the Arctic Frost dice set. Crystal clear blue resin captures the essence of glacial ice, with delicate white swirls resembling snowdrifts and fine silver glitter that sparkles like frost. The numbers are inked in a cool metallic blue that complements the icy theme.",
         price: 62.99,
         etsyLink: "https://www.etsy.com/listing/YOUR-ACTUAL-LINK-HERE",
@@ -82,14 +82,14 @@ const products = [
             "Hand painted figurine inside d20",
             "Custom stand to hold the d20",
             "Velvet drawstring pouch",
-            "Icy blue and white swirls",
-            "Silver glitter accents"
+            "Handcrafted with premium resin",
+            "Perfectly balanced for fair rolls"
         ]
     },
     {
         id: 6,
         name: "Cthulhu Emerges",
-        description: "75mm D20 with hand painded figurine inside",
+        description: "75mm D20 with hand painded figurine inside.",
         fullDescription: "Cthulhu emerging from the ocean grasping at a small boat",
         price: 400,
         etsyLink: "https://darkstardice.etsy.com/listing/1760905289",
@@ -334,6 +334,7 @@ modalStyles.textContent = `
 `;
 
 document.head.appendChild(modalStyles);
+
 
 
 
