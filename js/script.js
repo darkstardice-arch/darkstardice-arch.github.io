@@ -56,10 +56,10 @@ const products = [
         id: 4,
         name: "Labyrith",
         description: "55mm D20 with hand painded figurine inside.",
-        fullDescription: "Mysterious and elegant, the Midnight Shadow set appears black at first glance but reveals hidden depths of purple and blue shimmer when held to the light. This effect is achieved through specialized pigment techniques. The numbers are inked in a bright metallic silver for maximum readability in dim gaming environments.",
-        price: 72.25,
-        etsyLink: "https://www.etsy.com/listing/YOUR-ACTUAL-LINK-HERE",
-        imageUrl: "images/products/midnight-shadow.jpg", // UPDATE with your actual filename
+        fullDescription: "Step into the mysterious world of The Labyrinth with this themed d20. Measuring 55mm from tip to tip, this die is the perfect size for any Dungeons and Dragons campaign. The intricate design of the labyrinth is cast into die, adding a unique and memorable touch to every roll. Pay homage to the iconic movie and its iconic star, David Bowie, with this one-of-a-kind dice. Whether you're a fan of the film or just want a dice with some character, this d20 is a must-have for any tabletop enthusiast.  Link to model: https://www.thingiverse.com/thing:3891187",
+        price: 150,
+        etsyLink: "https://darkstardice.etsy.com/listing/1335202069",
+        imageUrl: "Images/Labyrinth D20/PXL_20221029_035706947.jpg", // UPDATE with your actual filename
         badge: "Limited",
         includes: [
             "Hand painted figurine inside d20",
@@ -73,10 +73,10 @@ const products = [
         id: 5,
         name: "Exodia",
         description: "55mm D20 with hand painded figurine inside.",
-        fullDescription: "Feel the chill of the frozen north with the Arctic Frost dice set. Crystal clear blue resin captures the essence of glacial ice, with delicate white swirls resembling snowdrifts and fine silver glitter that sparkles like frost. The numbers are inked in a cool metallic blue that complements the icy theme.",
-        price: 62.99,
-        etsyLink: "https://www.etsy.com/listing/YOUR-ACTUAL-LINK-HERE",
-        imageUrl: "images/products/arctic-frost.jpg", // UPDATE with your actual filename
+        fullDescription: "Introducing our exquisite 55mm d20, crafted from crystal-clear material that showcases the intricate, hand-painted figurine encapsulated within. This particular edition features Exodia, the legendary Forbidden One from Yu-Gi-Oh!, meticulously detailed to capture the imposing presence and mythic aura of this iconic character.  The clear d20 allows you to admire Exodia in all its glory, from the muscular, ancient armor to the glowing, mystical runes that signify its unparalleled power. The figurine's deep blue and gold accents shimmer brilliantly, creating a captivating centerpiece for any dice collection.  Rolling this d20 is a unique experience, as the transparent material provides an unobstructed view of Exodia's commanding form as it moves. Whether you're a Yu-Gi-Oh! enthusiast or a collector of unique dice, this piece combines the thrill of gaming with the artistry of miniature painting.  However, wielding the power of Exodia is not for the faint of heart. This d20 is not only a testament to incredible craftsmanship but also a symbol of ultimate power in your hands, inspiring awe and caution in equal measure. Use it wisely and watch as your opponents behold the might of the Forbidden One.  Disclaimer: I do not own the rights to Exodia or Yu-Gi-Oh! All rights to these characters and trademarks belong to their respective owners.",
+        price: 150,
+        etsyLink: "https://darkstardice.etsy.com/listing/1737099082",
+        imageUrl: "Images/Exodia/PXL_20231108_063756607.jpg", // UPDATE with your actual filename
         badge: null,
         includes: [
             "Hand painted figurine inside d20",
@@ -334,6 +334,7 @@ modalStyles.textContent = `
 `;
 
 document.head.appendChild(modalStyles);
+
 
 
 
