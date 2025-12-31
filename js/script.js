@@ -1,0 +1,335 @@
+// ===== PRODUCTS DATA =====
+// UPDATE THIS WITH YOUR ACTUAL PRODUCT INFORMATION
+const products = [
+    {
+        id: 1,
+        name: "Nebula Galaxy Set",
+        description: "Deep cosmic blues and purples with shimmering silver glitter, reminiscent of a distant galaxy.",
+        fullDescription: "This Nebula Galaxy set features a stunning blend of deep blues, vibrant purples, and shimmering silver glitter suspended in crystal-clear resin. Each die is carefully polished to a high-gloss finish, with sharp, readable silver numbers. The set includes all seven standard polyhedral dice (d4, d6, d8, d10, d%, d12, d20) plus an extra d20 for advantage rolls. Made with premium resin for excellent weight and balance.",
+        price: 68.99,
+        etsyLink: "https://www.etsy.com/listing/YOUR-ACTUAL-LINK-HERE",
+        imageUrl: "images/products/nebula-galaxy.jpg", // UPDATE with your actual filename
+        badge: "Bestseller",
+        includes: [
+            "Full 7-dice polyhedral set",
+            "Extra d20 for advantage/disadvantage",
+            "Velvet drawstring pouch",
+            "Handcrafted with premium resin",
+            "Perfectly balanced for fair rolls"
+        ]
+    },
+    {
+        id: 2,
+        name: "Dragon's Hoard Amber",
+        description: "Golden amber with captured gold leaf flakes and fiery orange accents.",
+        fullDescription: "Inspired by a dragon's treasure trove, this set captures the warmth of gold and the fire of precious gems. Golden amber resin holds delicate gold leaf flakes that catch the light with every roll. The numbers are inked in a deep crimson for excellent contrast. Each die has a substantial weight and satisfying roll, with no bubbles or imperfections.",
+        price: 74.50,
+        etsyLink: "https://www.etsy.com/listing/YOUR-ACTUAL-LINK-HERE",
+        imageUrl: "images/products/dragons-hoard.jpg", // UPDATE with your actual filename
+        badge: "New",
+        includes: [
+            "Full 7-dice polyhedral set",
+            "Extra d20 for advantage/disadvantage",
+            "Velvet drawstring pouch",
+            "Gold leaf inclusions",
+            "Premium resin construction"
+        ]
+    },
+    {
+        id: 3,
+        name: "Enchanted Forest",
+        description: "Emerald greens with mossy inclusions and sparkling glitter.",
+        fullDescription: "Step into a magical forest with this enchanting dice set. Layers of emerald and jade green resin create depth, while subtle mossy inclusions and fine green glitter mimic dappled sunlight through leaves. The silver numbers shine brightly against the deep green background. These dice are perfectly balanced and tumbled smooth for a professional finish.",
+        price: 65.75,
+        etsyLink: "https://www.etsy.com/listing/YOUR-ACTUAL-LINK-HERE",
+        imageUrl: "images/products/enchanted-forest.jpg", // UPDATE with your actual filename
+        badge: null,
+        includes: [
+            "Full 7-dice polyhedral set",
+            "Extra d20 for advantage/disadvantage",
+            "Velvet drawstring pouch",
+            "Mossy green inclusions",
+            "Perfectly balanced"
+        ]
+    },
+    {
+        id: 4,
+        name: "Midnight Shadow",
+        description: "Deep black with purple and blue shimmer that appears in the light.",
+        fullDescription: "Mysterious and elegant, the Midnight Shadow set appears black at first glance but reveals hidden depths of purple and blue shimmer when held to the light. This effect is achieved through specialized pigment techniques. The numbers are inked in a bright metallic silver for maximum readability in dim gaming environments.",
+        price: 72.25,
+        etsyLink: "https://www.etsy.com/listing/YOUR-ACTUAL-LINK-HERE",
+        imageUrl: "images/products/midnight-shadow.jpg", // UPDATE with your actual filename
+        badge: "Limited",
+        includes: [
+            "Full 7-dice polyhedral set",
+            "Extra d20 for advantage/disadvantage",
+            "Velvet drawstring pouch",
+            "Hidden color-shift effect",
+            "Metallic silver numbers"
+        ]
+    },
+    {
+        id: 5,
+        name: "Arctic Frost",
+        description: "Icy clear blue with white swirls and silver glitter.",
+        fullDescription: "Feel the chill of the frozen north with the Arctic Frost dice set. Crystal clear blue resin captures the essence of glacial ice, with delicate white swirls resembling snowdrifts and fine silver glitter that sparkles like frost. The numbers are inked in a cool metallic blue that complements the icy theme.",
+        price: 62.99,
+        etsyLink: "https://www.etsy.com/listing/YOUR-ACTUAL-LINK-HERE",
+        imageUrl: "images/products/arctic-frost.jpg", // UPDATE with your actual filename
+        badge: null,
+        includes: [
+            "Full 7-dice polyhedral set",
+            "Extra d20 for advantage/disadvantage",
+            "Velvet drawstring pouch",
+            "Icy blue and white swirls",
+            "Silver glitter accents"
+        ]
+    },
+    {
+        id: 6,
+        name: "Volcanic Ember",
+        description: "Fiery red-orange with black smoke effects and glowing yellow accents.",
+        fullDescription: "Channel the power of a volcano with the Volcanic Ember dice set. Layers of glowing red, orange, and yellow resin create the illusion of flowing lava, while black smoke effects add depth and drama. The numbers are inked in a bold black for high contrast. These dice have a warm, fiery appearance when light passes through them.",
+        price: 69.50,
+        etsyLink: "https://www.etsy.com/listing/YOUR-ACTUAL-LINK-HERE",
+        imageUrl: "images/products/volcanic-ember.jpg", // UPDATE with your actual filename
+        badge: "Popular",
+        includes: [
+            "Full 7-dice polyhedral set",
+            "Extra d20 for advantage/disadvantage",
+            "Velvet drawstring pouch",
+            "Lava flow effect",
+            "Bold black numbers"
+        ]
+    }
+];
+
+// ===== DOM ELEMENTS =====
+const productsContainer = document.getElementById('productsContainer');
+const modal = document.getElementById('productModal');
+const closeModal = document.querySelector('.close-modal');
+const modalProductContent = document.getElementById('modalProductContent');
+const mobileMenu = document.querySelector('.mobile-menu');
+const nav = document.querySelector('nav');
+const newsletterForm = document.getElementById('newsletterForm');
+const currentYear = document.getElementById('currentYear');
+
+// ===== INITIALIZE WEBSITE =====
+document.addEventListener('DOMContentLoaded', () => {
+    renderProducts();
+    updateCurrentYear();
+    setupEventListeners();
+    setupSmoothScrolling();
+});
+
+// ===== RENDER PRODUCTS =====
+function renderProducts() {
+    productsContainer.innerHTML = '';
+    
+    products.forEach(product => {
+        const productCard = document.createElement('div');
+        productCard.className = 'product-card';
+        
+        productCard.innerHTML = `
+            <div class="product-img">
+                <img src="${product.imageUrl}" alt="${product.name}" loading="lazy">
+                ${product.badge ? `<div class="product-badge">${product.badge}</div>` : ''}
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">${product.name}</h3>
+                <p class="product-desc">${product.description}</p>
+                <div class="product-price">$${product.price.toFixed(2)}</div>
+                <div class="product-buttons">
+                    <button class="view-details" data-id="${product.id}">View Details</button>
+                    <a href="${product.etsyLink}" class="buy-now" target="_blank" rel="noopener">
+                        <i class="fab fa-etsy"></i> Buy
+                    </a>
+                </div>
+            </div>
+        `;
+        
+        productsContainer.appendChild(productCard);
+    });
+    
+    // Add event listeners to View Details buttons
+    document.querySelectorAll('.view-details').forEach(button => {
+        button.addEventListener('click', (e) => {
+            const productId = parseInt(e.target.getAttribute('data-id'));
+            openProductModal(productId);
+        });
+    });
+}
+
+// ===== PRODUCT MODAL =====
+function openProductModal(productId) {
+    const product = products.find(p => p.id === productId);
+    
+    if (!product) return;
+    
+    const includesList = product.includes.map(item => `<li>${item}</li>`).join('');
+    
+    modalProductContent.innerHTML = `
+        <div class="modal-image">
+            <img src="${product.imageUrl}" alt="${product.name}">
+        </div>
+        <div class="modal-details">
+            <h2>${product.name}</h2>
+            ${product.badge ? `<span class="product-badge">${product.badge}</span>` : ''}
+            <p class="modal-description">${product.fullDescription}</p>
+            
+            <div class="modal-price">$${product.price.toFixed(2)}</div>
+            
+            <div class="modal-includes">
+                <h3>What's Included</h3>
+                <ul>${includesList}</ul>
+            </div>
+            
+            <div class="modal-actions">
+                <a href="${product.etsyLink}" class="btn btn-etsy" target="_blank" rel="noopener">
+                    <i class="fab fa-etsy"></i> Purchase on Etsy
+                </a>
+                <a href="https://www.etsy.com/shop/Darkstardice" class="btn" target="_blank" rel="noopener">
+                    View All Sets
+                </a>
+            </div>
+        </div>
+    `;
+    
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeProductModal() {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+// ===== EVENT LISTENERS =====
+function setupEventListeners() {
+    // Close modal
+    closeModal.addEventListener('click', closeProductModal);
+    
+    // Close modal when clicking outside
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeProductModal();
+        }
+    });
+
+    // Mobile menu toggle
+    mobileMenu.addEventListener('click', toggleMobileMenu);
+    
+    // Newsletter form
+    newsletterForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const emailInput = newsletterForm.querySelector('.newsletter-input');
+        
+        if (validateEmail(emailInput.value)) {
+            // In a real implementation, you would send this to your email service
+            alert('Thank you for joining the Dark Star Guild! You\'ll receive updates on new dice releases.');
+            emailInput.value = '';
+        } else {
+            alert('Please enter a valid email address.');
+        }
+    });
+}
+
+// ===== UTILITY FUNCTIONS =====
+function updateCurrentYear() {
+    currentYear.textContent = new Date().getFullYear();
+}
+
+function toggleMobileMenu() {
+    nav.classList.toggle('active');
+}
+
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}
+
+function setupSmoothScrolling() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                // Close mobile menu if open
+                nav.classList.remove('active');
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+}
+
+// ===== ADDITIONAL STYLING FOR MODAL =====
+const modalStyles = document.createElement('style');
+modalStyles.textContent = `
+    .modal-description {
+        margin: 1.5rem 0;
+        line-height: 1.7;
+    }
+    
+    .modal-price {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--primary);
+        margin: 1.5rem 0;
+    }
+    
+    .modal-includes {
+        margin: 1.5rem 0;
+    }
+    
+    .modal-includes h3 {
+        margin-bottom: 0.8rem;
+        color: var(--dark);
+    }
+    
+    .modal-includes ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    .modal-includes li {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid var(--light-gray);
+        display: flex;
+        align-items: center;
+    }
+    
+    .modal-includes li:before {
+        content: "✓";
+        color: var(--accent);
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    
+    .modal-actions {
+        margin-top: 2rem;
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    
+    @media (max-width: 768px) {
+        .modal-actions {
+            flex-direction: column;
+        }
+        
+        .modal-actions .btn {
+            width: 100%;
+            text-align: center;
+        }
+    }
+`;
+document.head.appendChild(modalStyles);
