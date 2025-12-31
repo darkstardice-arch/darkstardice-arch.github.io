@@ -88,19 +88,19 @@ const products = [
     },
     {
         id: 6,
-        name: "Volcanic Ember",
-        description: "Fiery red-orange with black smoke effects and glowing yellow accents.",
-        fullDescription: "Channel the power of a volcano with the Volcanic Ember dice set. Layers of glowing red, orange, and yellow resin create the illusion of flowing lava, while black smoke effects add depth and drama. The numbers are inked in a bold black for high contrast. These dice have a warm, fiery appearance when light passes through them.",
-        price: 69.50,
-        etsyLink: "https://www.etsy.com/listing/YOUR-ACTUAL-LINK-HERE",
-        imageUrl: "images/products/volcanic-ember.jpg", // UPDATE with your actual filename
+        name: "Cthulhu Emerges",
+        description: "75mm D20 with hand painded figurine inside",
+        fullDescription: "Cthulhu emerging from the ocean grasping at a small boat",
+        price: 400,
+        etsyLink: "https://darkstardice.etsy.com/listing/1760905289",
+        imageUrl: "Images/Cthulhu Emerges/PXL_20240712_152213259.jpg", // UPDATE with your actual filename
         badge: "Popular",
         includes: [
             "Hand painted figurine inside d20",
             "Custom stand to hold the d20",
             "Velvet drawstring pouch",
-            "Lava flow effect",
-            "Bold black numbers"
+            "Handcrafted with premium resin",
+            "Perfectly balanced for fair rolls"
         ]
     }
 ];
@@ -334,5 +334,6 @@ modalStyles.textContent = `
 `;
 
 document.head.appendChild(modalStyles);
+
 
 
