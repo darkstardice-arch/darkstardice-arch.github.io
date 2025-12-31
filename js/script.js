@@ -3,16 +3,16 @@
 const products = [
     {
         id: 1,
-        name: "Nebula Galaxy Set",
-        description: "Deep cosmic blues and purples with shimmering silver glitter, reminiscent of a distant galaxy.",
-        fullDescription: "This Nebula Galaxy set features a stunning blend of deep blues, vibrant purples, and shimmering silver glitter suspended in crystal-clear resin. Each die is carefully polished to a high-gloss finish, with sharp, readable silver numbers. The set includes all seven standard polyhedral dice (d4, d6, d8, d10, d%, d12, d20) plus an extra d20 for advantage rolls. Made with premium resin for excellent weight and balance.",
-        price: 68.99,
-        etsyLink: "https://www.etsy.com/listing/YOUR-ACTUAL-LINK-HERE",
-        imageUrl: "images/products/nebula-galaxy.jpg", // UPDATE with your actual filename
+        name: "Wish Dragon, 75mm D20",
+        description: "wish dragon d20",
+        fullDescription: "Tbd",
+        price: 400,
+        etsyLink: "https://darkstardice.etsy.com/listing/4311943951",
+        imageUrl: "Images/Dragon Ball/PXL_20231219_035940158.jpg", // UPDATE with your actual filename
         badge: "Bestseller",
         includes: [
-            "Full 7-dice polyhedral set",
-            "Extra d20 for advantage/disadvantage",
+            "Hand painted figurine inside d20",
+            "Custom stand to hold the d20",
             "Velvet drawstring pouch",
             "Handcrafted with premium resin",
             "Perfectly balanced for fair rolls"
@@ -332,4 +332,5 @@ modalStyles.textContent = `
         }
     }
 `;
+
 document.head.appendChild(modalStyles);
